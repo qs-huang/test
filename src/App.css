@@ -1,0 +1,31 @@
+body {
+  /* Reseting the default here */
+  margin: 0;
+}
+
+#article_wrapper {
+  position: relative;
+  background-color: grey;
+  
+  /*   We can use either pixels or vh to determine what the scroll legnth should be however it should contain all slides within it! */
+  /*   height: 5000px; */ 
+  
+  height: 1200vh; /* Length of the interactive scroll article */
+}
+
+#canvas_wrapper {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.scroll_slide {
+  color: "red";
+  position: "absolute";
+  width: "50vw";
+  padding-left: "20px";
+  z-index: "50";
+}
+
